@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css?family=Karma|Montserrat');
+
+:root{
+	--clouds :#ecf0f1;
+	--silver :#bdc3c7;
+	--midnight-blue: #2c3e50;
+	--turquoise: #1abc9c;
+}
+
+body {
+  	box-sizing: border-box;
+	background : var(--midnight-blue);
+    font-family: 'Montserrat', sans-serif;
+	font-size: 16px;
+	margin: 0;	
+	color: var(--clouds);
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.container{
+	display: grid;
+	grid-template-columns: 30% 1fr;
+	grid-template-rows: auto;
+	grid-gap: 20px;
+}
+
+.sidebar{
+	background: var(--clouds);
+	color: var(--midnight-blue);
+	position: -webkit-sticky;
+  	position: sticky;
+	top: 0;
+	height: 100vh;
+	display: grid;
+	grid-template-rows: 1fr 1fr 1fr 1fr;
+	overflow: scroll;
+	grid-gap: 20px;
+}
+.content{
+	padding: 20px;
+}
+header{
+	text-align: center;
+	display: grid;
+	grid-template-columns: 50% 50%;
+	grid-template-rows: 1fr auto;
+	padding-right: 20px ;
+	padding-left: 20px;
+}
+header *{
+	align-self : center;
+}
+h1{
+	text-align: left;
+	text-transform: uppercase;
+}
+header p {
+	grid-column: span 2;
+}
+p em{
+	font-weight: bold;
+	font-style: normal;
+}
+.contact, .social {
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	padding-right: 20px ;
+	padding-left: 20px;
+}
+
+.contact *, .social *{
+	align-self: center;
+}
+.resume{
+	text-align: justify;
+	padding-right: 20px ;
+	padding-left: 20px;
+}
+
+.detail{
+	display: grid;
+	grid-template-columns: 1fr 2fr;
+	grid-column-gap: 20px;
+	padding-top: 10px;
+}
+#lireplus{
+	grid-column: span 2;
+	text-align: right;
+}
+
+.inner__skill{
+	display: grid;
+	grid-template-columns: 1fr 2fr;
+}
+
+.detail p, .diverse p{
+	font-weight: 100;
+	font-size: 0.9rem;
+	font-family: 'Montserrat';
+	color: var(--silver);
+}
+progress{
+	justify-content: center;
+	align-self: center;
+	justify-self: center; 
+}
+.inner{
+	grid-column: span 6;
+}
+
+.diverse{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
+h2{
+	color: var(--turquoise);
+	text-transform: uppercase;
+}
+h3{
+	font-weight: 200;
+	margin: 0;
+}
+a{
+	text-decoration: none;
+	color: var(--turquoise);
+}
+a:hover{
+	text-decoration: underline;
+}
+img{
+	border: 1px solid var(--midnight-blue);
+	box-shadow: none;
+}
+img:hover{
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
