@@ -19,6 +19,9 @@ body {
   box-sizing: inherit;
 }
 
+.lieu{
+	font-style: italic;
+}
 .container{
 	display: grid;
 	grid-template-columns: 30% 1fr;
@@ -88,6 +91,13 @@ p em{
 #lireplus{
 	grid-column: span 2;
 	text-align: right;
+	color: var(--turquoise);
+	text-decoration: underline;
+	font-size: 0.8rem;
+}
+#lireplus:hover{
+	cursor: pointer;
+	text-decoration: none;
 }
 
 .inner__skill{
