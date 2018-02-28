@@ -25,8 +25,9 @@ body {
 .container{
 	display: grid;
 	grid-template-columns: 30% 1fr;
-	grid-template-rows: auto;
 	grid-gap: 20px;
+	grid-template-areas: 
+		"sidebar content";
 }
 
 .sidebar{
@@ -42,9 +43,11 @@ body {
 	grid-gap: 20px;
 	justify-content: center;
 	align-items: center;
+	grid-area: sidebar;
 }
 .content{
 	padding: 20px;
+	grid-area: content;
 }
 header{
 	text-align: center;
@@ -121,6 +124,12 @@ p em{
 	font-family: 'Montserrat';
 	color: var(--silver);
 }
+.detail a{
+	color: var(--clouds);
+}
+.detail a:hover{
+	color: var(--turquoise);
+}
 progress{
 	justify-content: center;
 	align-self: center;
@@ -155,4 +164,48 @@ img{
 }
 img:hover{
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+@media (max-width: 1080px) {
+
+}
+
+@media (max-width: 721px) {
+	.container {
+		grid-template-columns: 1fr;
+		grid-template-areas: 
+			"sidebar"
+			"content"
+	}
+	.sidebar{
+  		position: relative;
+		height: auto;
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: auto;
+		overflow: hidden;
+	}
+	header{
+		grid-column: span 2;
+	}
+	.social{
+		grid-column: span 2;
+	}
+}
+
+@media (max-width: 500px){
+	.sidebar{
+		grid-template-columns: 1fr;
+	}
+	header{
+		grid-column: span 1;
+	}
+	.social{
+		grid-column: span 1;
+	}
+	.detail{
+		grid-template-columns: 1fr;
+	}
+	.diverse{
+		grid-template-columns: 1fr;
+	}
 }
