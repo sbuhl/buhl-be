@@ -100,7 +100,7 @@ p em{
 }
 #lireplus{
 	grid-column: span 2;
-	text-align: right;
+	text-align: left;
 	color: var(--turquoise);
 	text-decoration: underline;
 	font-size: 0.8rem;
