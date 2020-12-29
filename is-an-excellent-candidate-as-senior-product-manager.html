@@ -15,9 +15,22 @@
     <link rel="stylesheet" href="tailwind.css">
     <link rel="stylesheet" href="toprint.css">
     <style>
-        /* Overwrite the rule to have a clean display of tags*/
+        /* Overwrite the rule to have a clean disp
+        lay of tags*/
         .w-8 {
             min-width: 2rem;
+        }
+
+        .details {
+            display: none;
+        }
+
+        .show {
+            display: block;
+        }
+
+        .show-details:hover {
+            cursor: pointer;
         }
     </style>
 </head>
@@ -27,19 +40,20 @@
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="lg:text-center">
                 <h2 class="text-base text-indigo-600 font-semibold tracking-wide uppercase">Sébastien Bühl</h2>
-                <div class="text-4xl sm:text-6xl lg:text-7xl leading-none font-extrabold tracking-tight mt-10 mb-8 sm:mt-14 sm:mb-10">
-                    <span style="display:block"  class="bg-clip-text text-transparent bg-gradient-to-r from-indigo-500 to-green-500">
+                <div
+                    class="text-4xl sm:text-6xl lg:text-7xl leading-none font-extrabold tracking-tight mt-10 mb-8 sm:mt-14 sm:mb-10 noprint">
+                    <span style="display:block"
+                        class="bg-clip-text text-transparent bg-gradient-to-r from-indigo-500 to-green-500">
                         Disrupt the African tech ecosystem<br>
                         starting with Rwanda.
                     </span>
-                  </div>
-                <div class="text-4xl sm:text-6xl lg:text-7xl leading-none font-extrabold tracking-tight mt-10 mb-8 sm:mt-14 sm:mb-10">
-                    <span
-                        class=" bg-gradient-to-r bg-clip-text ">
-                        
-                </span>
                 </div>
+                <div
+                    class="text-4xl sm:text-6xl lg:text-7xl leading-none font-extrabold tracking-tight mt-10 mb-8 sm:mt-14 sm:mb-10">
+                    <span class=" bg-gradient-to-r bg-clip-text ">
 
+                    </span>
+                </div>
                 <p class="mt-4 max-w-2xl text-xl text-gray-500 lg:mx-auto">
                     I enumerate 5 <em>things</em> that make me an excellent candidate for the position of
                     <b>Senior Product Manager</b>. Below, in my CV's
@@ -53,7 +67,7 @@
                 <dl class="space-y-10 md:space-y-0 md:grid md:grid-cols-2 md:gap-x-8 md:gap-y-10">
                     <!-- UX -->
                     <div class="flex">
-                        <div class="flex-shrink-0">
+                        <div class="flex-shrink-0 noprint">
                             <div class="flex items-center justify-center h-12 w-12 rounded-md bg-indigo-500 text-white">
                                 <!-- Heroicon name: user -->
                                 <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
@@ -82,7 +96,7 @@
 
                     <!-- UI-->
                     <div class="flex">
-                        <div class="flex-shrink-0">
+                        <div class="flex-shrink-0 noprint">
                             <div class="flex items-center justify-center h-12 w-12 rounded-md bg-indigo-500 text-white">
                                 <!-- Heroicon name: color-swatch -->
                                 <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
@@ -109,7 +123,7 @@
 
                     <!-- Tech -->
                     <div class="flex">
-                        <div class="flex-shrink-0">
+                        <div class="flex-shrink-0 noprint">
                             <div class="flex items-center justify-center h-12 w-12 rounded-md bg-indigo-500 text-white">
                                 <!-- Heroicon name: database -->
                                 <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
@@ -136,7 +150,7 @@
 
                     <!-- Pedagoy -->
                     <div class="flex">
-                        <div class="flex-shrink-0">
+                        <div class="flex-shrink-0 noprint">
                             <div class="flex items-center justify-center h-12 w-12 rounded-md bg-indigo-500 text-white">
                                 <!-- Heroicon name: academia-cap -->
                                 <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
@@ -163,7 +177,7 @@
 
                     <!-- Open Minded -->
                     <div class="flex">
-                        <div class="flex-shrink-0">
+                        <div class="flex-shrink-0 noprint">
                             <div class="flex items-center justify-center h-12 w-12 rounded-md bg-indigo-500 text-white">
                                 <!-- Heroicon name: globe -->
                                 <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
@@ -181,7 +195,8 @@
                                 Driven by changes, my experiences abroad brough me an open mind. I like to meet people
                                 and
                                 discover new cultures and ways of thinking. I like to have constant contact with my team
-                                of developers and open-minded towards any suggestions from anyone as it may shift the
+                                of developers and being open-minded towards any suggestions from anyone as it may shift
+                                the
                                 development process for the best.
                             </dd>
                         </div>
@@ -195,8 +210,8 @@
         <ul class="bg-gray-50 rounded-3xl p-2 sm:p-5 xl:p-6">
             <!-- Dad -->
             <li>
-                <article><a href="#"
-                        class="grid md:grid-cols-8 xl:grid-cols-9 items-start relative rounded-xl p-3 sm:p-5 xl:p-6 overflow-hidden hover:bg-white">
+                <article><a
+                        class="grid md:grid-cols-8 xl:grid-cols-9 items-start relative rounded-xl p-3 sm:p-5 xl:p-6 overflow-hidden hover:bg-white show-details">
                         <h3
                             class="font-semibold text-gray-900 md:col-start-3 md:col-span-6 xl:col-start-3 xl:col-span-7 mb-1 ml-9 md:ml-0">
                             Pround Dad <span class="text-sm text-gray-400 font-light">@Family First - Earth</span></h3>
@@ -221,26 +236,36 @@
                                         d="M10.394 2.08a1 1 0 00-.788 0l-7 3a1 1 0 000 1.84L5.25 8.051a.999.999 0 01.356-.257l4-1.714a1 1 0 11.788 1.838L7.667 9.088l1.94.831a1 1 0 00.787 0l7-3a1 1 0 000-1.838l-7-3zM3.31 9.397L5 10.12v4.102a8.969 8.969 0 00-1.05-.174 1 1 0 01-.89-.89 11.115 11.115 0 01.25-3.762zM9.3 16.573A9.026 9.026 0 007 14.935v-3.957l1.818.78a3 3 0 002.364 0l5.508-2.361a11.026 11.026 0 01.25 3.762 1 1 0 01-.89.89 8.968 8.968 0 00-5.35 2.524 1 1 0 01-1.4 0zM6 18a1 1 0 001-1v-2.065a8.935 8.935 0 00-2-.712V17a1 1 0 001 1z">
                                     </path>
                                 </svg>
+                            </span>
+                            <span
+                                class="flex items-center justify-center h-8 w-8 ml-1 rounded-md bg-indigo-500 text-white">
+                                <!-- Heroicon name: globe -->
+                                <svg class="h-4 w-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                    stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                </svg>
                             </span> <span class="text-gray-500 flex items-center jsutify-center ml-2">My son disrupt my
-                                world and I'm the one who's
-                                learning, a LOT!</span>
+                                world and I'm the one who's learning, a LOT! And I've no doubt that his arrival will
+                                transform me in all aspects and will have an impact on how I see things.</span>
                         </p>
                     </a></article>
             </li>
             <!-- UX Product Owner Odoo -->
             <li>
-                <article><a href="#"
-                        class="grid md:grid-cols-8 xl:grid-cols-9 items-start relative rounded-xl p-3 sm:p-5 xl:p-6 overflow-hidden hover:bg-white">
+                <article>
+                    <a
+                        class="grid md:grid-cols-8 xl:grid-cols-9 items-start relative rounded-xl p-3 sm:p-5 xl:p-6 overflow-hidden hover:bg-white show-details">
                         <h3
                             class="font-semibold text-gray-900 md:col-start-3 md:col-span-6 xl:col-start-3 xl:col-span-7 mb-1 ml-9 md:ml-0">
                             UX/Product Owner <span class="text-sm text-gray-400 font-light">@Odoo - Belgium</span></h3>
                         <time
-                            class="md:col-start-1 md:col-span-2 row-start-1 md:row-end-5 flex items-center font-medium mb-1 md:mb-0"><svg
+                            class="md:col-start-1 md:col-span-2 row-start-1 md:row-end-6 flex items-center font-medium mb-1 md:mb-0"><svg
                                 viewBox="0 0 12 12" class="w-3 h-3 mr-6 overflow-visible text-gray-300">
                                 <circle cx="6" cy="6" r="6" fill="rgb(99, 102, 241)"></circle>
                                 <circle cx="6" cy="6" r="11" fill="none" stroke="rgb(99, 102, 241)" stroke-width="2">
                                 </circle>
-                                
+
                                 <path d="M 6 -6 V -30" fill="none" stroke-width="2" stroke="currentColor"
                                     class="text-gray-200"></path>
                                 <path d="M 6 18 V 500" fill="none" stroke-width="2" stroke="currentColor"
@@ -249,12 +274,12 @@
                             <p>Oct. 2018 - current <br><span class="text-sm text-gray-400 font-light">2 years, 2
                                     months</span></p>
                         </time>
-                        <!-- <p class="text-gray-500 md:col-start-3 md:col-span-6 xl:col-span-7 ml-9 md:ml-0 mb-1">
-        Responsible for the
-        applications Website, eCommerce, Survey and eLearning.
-        Supervision of developer’s team (2 teams of 8 people).
-        Prioritize the team backlog to streamline the execution of the roadmap.
-    </p> -->
+                        <p class="text-gray-500 md:col-start-3 md:col-span-6 xl:col-span-7 ml-9 md:ml-0 mb-1 details">
+                            Responsible for the
+                            applications Website, eCommerce, Survey and eLearning. <br>
+                            Supervision of developer’s team (2 teams of 8 people).<br>
+                            Prioritize the team backlog to streamline the execution of the roadmap.
+                        </p>
                         <p class="md:col-start-3 md:col-span-6 xl:col-span-7 ml-9 mb-1 md:ml-0 flex">
                             <span class="flex items-center justify-center h-8 w-8 rounded-md bg-indigo-500 text-white">
                                 <!-- Heroicon name: user -->
@@ -263,8 +288,10 @@
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                         d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
                                 </svg>
-                            </span> <span class="text-gray-500 flex items-center jsutify-center ml-2">The UI is equally
-                                important as the UX. One does not go without the other. </span>
+                            </span> <span class="text-gray-500 flex items-center jsutify-center ml-2">We put the user at
+                                the center of the development of our product. To do so, we use some tools among which,
+                                user tests and the record of the onboarding of random users on our platform with the
+                                tool Full Story. We want their experience to be streamless.</span>
                         </p>
                         <p class="md:col-start-3 md:col-span-6 xl:col-span-7 ml-9 md:ml-0 flex mb-1">
                             <span class="flex items-center justify-center h-8 w-8 rounded-md bg-indigo-500 text-white">
@@ -275,7 +302,9 @@
                                         d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01" />
                                 </svg>
                             </span> <span class="text-gray-500 flex items-center jsutify-center ml-2">The UI is equally
-                                important as the UX. One does not go without the other.</span>
+                                important as the UX. One does not go without the other. We have to present clean screens
+                                to the user. We sketches the main idea first, then sometimes, designers give us a hand
+                                for the final touch.</span>
                         </p>
                         <p class="md:col-start-3 md:col-span-6 xl:col-span-7 ml-9 md:ml-0 flex">
                             <span class="flex items-center justify-center h-8 w-8 rounded-md bg-indigo-500 text-white">
@@ -289,12 +318,13 @@
                                 developers in Belgium and India, I find swift ways to communicate and make them work in
                                 the same direction.</span>
                         </p>
-                    </a></article>
+                    </a>
+                </article>
             </li>
             <!-- IT Consultancy -->
             <li>
-                <article><a href="#"
-                        class="grid md:grid-cols-8 xl:grid-cols-9 items-start relative rounded-xl p-3 sm:p-5 xl:p-6 overflow-hidden hover:bg-white">
+                <article><a
+                        class="grid md:grid-cols-8 xl:grid-cols-9 items-start relative rounded-xl p-3 sm:p-5 xl:p-6 overflow-hidden hover:bg-white show-details show-details">
                         <h3
                             class="font-semibold text-gray-900 md:col-start-3 md:col-span-6 xl:col-start-3 xl:col-span-7 mb-1 ml-9 md:ml-0">
                             IT Consultancy <span class="text-sm text-gray-400 font-light">@Self-employed (part-time) -
@@ -305,7 +335,7 @@
                                 <circle cx="6" cy="6" r="6" fill="rgb(99, 102, 241)"></circle>
                                 <circle cx="6" cy="6" r="11" fill="none" stroke="rgb(99, 102, 241)" stroke-width="2">
                                 </circle>
-                                
+
                                 <path d="M 6 -6 V -30" fill="none" stroke-width="2" stroke="currentColor"
                                     class="text-gray-200"></path>
                                 <path d="M 6 18 V 500" fill="none" stroke-width="2" stroke="currentColor"
@@ -314,12 +344,12 @@
                             <p>May 2029 - current <br><span class="text-sm text-gray-400 font-light">1 years, 6
                                     months</span></p>
                         </time>
-                        <!-- <p class="text-gray-500 md:col-start-3 md:col-span-6 xl:col-span-7 ml-9 md:ml-0 mb-1">
-            Consultancy for Odoo
-            products
-            and other IT services
-            Webmaster: www.kivutravel.com - www.goshop.cd - www.smlo.cd
-        </p> -->
+                        <p class="text-gray-500 md:col-start-3 md:col-span-6 xl:col-span-7 ml-9 md:ml-0 mb-1 details">
+                            Consultancy for Odoo
+                            products
+                            and other IT services
+                            Webmaster: www.kivutravel.com - www.goshop.cd - www.smlo.cd
+                        </p>
                         <p class="md:col-start-3 md:col-span-6 xl:col-span-7 ml-9 md:ml-0 flex">
                             <span class="flex items-center justify-center h-8 w-8 rounded-md bg-indigo-500 text-white">
                                 <!-- Heroicon name: database -->
@@ -328,16 +358,23 @@
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                         d="M4 7v10c0 2.21 3.582 4 8 4s8-1.79 8-4V7M4 7c0 2.21 3.582 4 8 4s8-1.79 8-4M4 7c0-2.21 3.582-4 8-4s8 1.79 8 4m0 5c0 2.21-3.582 4-8 4s-8-1.79-8-4" />
                                 </svg>
-                            </span> <span class="text-gray-500 flex items-center jsutify-center ml-2">Design is
-                                important in applications as Survey or Website of course. </span>
+                            </span> <span
+                            class="flex items-center justify-center h-8 w-8 ml-1 rounded-md bg-indigo-500 text-white">
+                            <!-- Heroicon name: color-swatch -->
+                            <svg class="h-4 w-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01" />
+                        </svg>
+                        </span><span class="text-gray-500 flex items-center jsutify-center ml-2">As product owner at Odoo, I do not really have time to code, or to make illustrations (logos for instance). So, I decided to work with few clients during my spare time. To do so, I need to properly manage my time.</span>
                         </p>
                     </a></article>
             </li>
             <!-- Business Analyst -->
             <li>
                 <article>
-                    <a href="#"
-                        class="grid md:grid-cols-8 xl:grid-cols-9 items-start relative rounded-xl p-3 sm:p-5 xl:p-6 overflow-hidden hover:bg-white">
+                    <a
+                        class="grid md:grid-cols-8 xl:grid-cols-9 items-start relative rounded-xl p-3 sm:p-5 xl:p-6 overflow-hidden hover:bg-white show-details">
                         <h3
                             class="font-semibold text-gray-900 md:col-start-3 md:col-span-6 xl:col-start-3 xl:col-span-7 mb-1 ml-9 md:ml-0">
                             Business Analyst <span class="text-sm text-gray-400 font-light">@Odoo - Belgium</span></h3>
@@ -353,10 +390,10 @@
                             <p>May 2018 - Oct. 2018<br><span class="text-sm text-gray-400 font-light">4 months</span>
                             </p>
                         </time>
-                        <!-- <p class="text-gray-500 md:col-start-3 md:col-span-6 xl:col-span-7 ml-9 md:ml-0 mb-1">
-        Responsible for
-        implementation projects and for helping Odoo customers with their use of Odoo business apps.
-    </p> -->
+                        <p class="text-gray-500 md:col-start-3 md:col-span-6 xl:col-span-7 ml-9 md:ml-0 mb-1 details">
+                            Responsible for
+                            implementation projects and for helping Odoo customers with their use of the business apps.
+                        </p>
                         <p class="md:col-start-3 md:col-span-6 xl:col-span-7 ml-9 md:ml-0 flex">
                             <span class="flex items-center justify-center h-8 w-8 rounded-md bg-indigo-500 text-white">
                                 <!-- Heroicon name: academia-cap -->
@@ -366,17 +403,16 @@
                                         d="M10.394 2.08a1 1 0 00-.788 0l-7 3a1 1 0 000 1.84L5.25 8.051a.999.999 0 01.356-.257l4-1.714a1 1 0 11.788 1.838L7.667 9.088l1.94.831a1 1 0 00.787 0l7-3a1 1 0 000-1.838l-7-3zM3.31 9.397L5 10.12v4.102a8.969 8.969 0 00-1.05-.174 1 1 0 01-.89-.89 11.115 11.115 0 01.25-3.762zM9.3 16.573A9.026 9.026 0 007 14.935v-3.957l1.818.78a3 3 0 002.364 0l5.508-2.361a11.026 11.026 0 01.25 3.762 1 1 0 01-.89.89 8.968 8.968 0 00-5.35 2.524 1 1 0 01-1.4 0zM6 18a1 1 0 001-1v-2.065a8.935 8.935 0 00-2-.712V17a1 1 0 001 1z">
                                     </path>
                                 </svg>
-                            </span> <span class="text-gray-500 flex items-center jsutify-center ml-2">Odoo has a steep
-                                learning curve. Whether technical or functional. Then, I had to teach those skills to
-                                our clients besides doint the implementation part.</span>
+                            </span> <span class="text-gray-500 flex items-center jsutify-center ml-2">With more than 25 business applications, Odoo has a steep
+                                learning curve. Whether technical or functional. Even while learning fast, it was a challenge, it wasn't long before the first customers arrived. Being directly in actual work is important for quick learning.</span>
                         </p>
                     </a>
                 </article>
             </li>
             <!-- TMK Computer Network Manager -->
             <li>
-                <article><a href="#"
-                        class="grid md:grid-cols-8 xl:grid-cols-9 items-start relative rounded-xl p-3 sm:p-5 xl:p-6 overflow-hidden hover:bg-white">
+                <article><a
+                        class="grid md:grid-cols-8 xl:grid-cols-9 items-start relative rounded-xl p-3 sm:p-5 xl:p-6 overflow-hidden hover:bg-white show-details">
                         <h3
                             class="font-semibold text-gray-900 md:col-start-3 md:col-span-6 xl:col-start-3 xl:col-span-7 mb-1 ml-9 md:ml-0">
                             Computer Network Manager <span class="text-sm text-gray-400 font-light">@TMK - DR
@@ -393,21 +429,44 @@
                                     months</span>
                             </p>
                         </time>
-                        <!-- <p class="text-gray-500 md:col-start-3 md:col-span-6 xl:col-span-7 ml-9 md:ml-0 mb-1">
-        Implementation of the
-        ERP
-        Odoo: accounting, fleet, inventory, repair. Training for end users. Head of Beverage
-        Distribution Activities (Brasimba’s products, Castel group). Implementation and management
-        of processes : sales and purchases, tracking of goods and trucks movement, stocks, packaging
-        returns, invoicing, customer loans, credit. Team supervision (20 people) in 4 distributions
-        centers (Goma, Bunia, Kiwanja, Watsa). Maintenance of the IT infrastructure in various
-        stations . Creation of marketing tools.</p> -->
+                        <p class="text-gray-500 md:col-start-3 md:col-span-6 xl:col-span-7 ml-9 md:ml-0 mb-1 details">
+                            Implementation of the
+                            ERP
+                            Odoo: accounting, fleet, inventory, repair. Training for end users. Head of Beverage
+                            Distribution Activities (Brasimba’s products, Castel group). Implementation and management
+                            of processes : sales and purchases, tracking of goods and trucks movement, stocks, packaging
+                            returns, invoicing, customer loans, credit. Team supervision (20 people) in 4 distributions
+                            centers (Goma, Bunia, Kiwanja, Watsa). Maintenance of the IT infrastructure in various
+                            stations . Creation of marketing tools.</p>
+                            <p class="md:col-start-3 md:col-span-6 xl:col-span-7 ml-9 md:ml-0 flex">
+                                <span class="flex items-center justify-center h-8 w-8 rounded-md bg-indigo-500 text-white">
+                                    <!-- Heroicon name: academia-cap -->
+                                    <svg class="h-4 w-4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20"
+                                        fill="currentColor">
+                                        <path
+                                            d="M10.394 2.08a1 1 0 00-.788 0l-7 3a1 1 0 000 1.84L5.25 8.051a.999.999 0 01.356-.257l4-1.714a1 1 0 11.788 1.838L7.667 9.088l1.94.831a1 1 0 00.787 0l7-3a1 1 0 000-1.838l-7-3zM3.31 9.397L5 10.12v4.102a8.969 8.969 0 00-1.05-.174 1 1 0 01-.89-.89 11.115 11.115 0 01.25-3.762zM9.3 16.573A9.026 9.026 0 007 14.935v-3.957l1.818.78a3 3 0 002.364 0l5.508-2.361a11.026 11.026 0 01.25 3.762 1 1 0 01-.89.89 8.968 8.968 0 00-5.35 2.524 1 1 0 01-1.4 0zM6 18a1 1 0 001-1v-2.065a8.935 8.935 0 00-2-.712V17a1 1 0 001 1z">
+                                        </path>
+                                    </svg>
+                                </span> <span class="text-gray-500 flex items-center jsutify-center ml-2">Starting this position as Odoo integrator for the application Accounting, Inventory, Sales, Purchase, Fleet, was a challenge. I had almost zero background in those areas. Hopefully, I had already worked here</span>
+                            </p>
+                            <p class="md:col-start-3 md:col-span-6 xl:col-span-7 ml-9 md:ml-0 flex">
+                                <span class="flex items-center justify-center h-8 w-8 rounded-md bg-indigo-500 text-white">
+                                    <!-- Heroicon name: globe -->
+                                    <svg class="h-4 w-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                        stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                    </svg>
+                                </span> <span class="text-gray-500 flex items-center jsutify-center ml-2">Working with
+                                    developers in Belgium and India, I find swift ways to communicate and make them work in
+                                    the same direction.</span>
+                            </p>
                     </a></article>
             </li>
             <!-- KT program and comm manager -->
             <li>
-                <article><a href="#"
-                        class="grid md:grid-cols-8 xl:grid-cols-9 items-start relative rounded-xl p-3 sm:p-5 xl:p-6 overflow-hidden hover:bg-white">
+                <article><a
+                        class="grid md:grid-cols-8 xl:grid-cols-9 items-start relative rounded-xl p-3 sm:p-5 xl:p-6 overflow-hidden hover:bg-white show-details">
                         <h3
                             class="font-semibold text-gray-900 md:col-start-3 md:col-span-6 xl:col-start-3 xl:col-span-7 mb-1 ml-9 md:ml-0">
                             Program and communication manager <span class="text-sm text-gray-400 font-light">@Kivu
@@ -423,11 +482,19 @@
                             <p>Oct 2014 - Dec 2015<br><span class="text-sm text-gray-400 font-light">1 year, 3
                                     months</span></p>
                         </time>
-                        <!-- <p class="text-gray-500 md:col-start-3 md:col-span-6 xl:col-span-7 ml-9 md:ml-0 mb-1">
+                        <p class="text-gray-500 md:col-start-3 md:col-span-6 xl:col-span-7 ml-9 md:ml-0 mb-1 details">
                             Organization of
                             touristics
-                            trip in the North and South Kivu, in DR Congo and Rwanda.</p> -->
-                        <p class="md:col-start-3 md:col-span-6 xl:col-span-7 ml-9 md:ml-0 flex mb-1">
+                            trip in the North and South Kivu, in DR Congo and Rwanda.</p>
+                            <p class="md:col-start-3 md:col-span-6 xl:col-span-7 ml-9 md:ml-0 flex mb-1">
+                                <span class="flex items-center justify-center h-8 w-8 rounded-md bg-indigo-500 text-white">
+                                    <svg class="h-4 w-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                                        stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                                    </svg>
+                                </span> <span class="text-gray-500 flex items-center jsutify-center ml-2">That's where I learn to customers, answer to emergencies (border or park closure, loss of visas, severe weather).  </span>
+                            </p><p class="md:col-start-3 md:col-span-6 xl:col-span-7 ml-9 md:ml-0 flex mb-1">
                             <span class="flex items-center justify-center h-8 w-8 rounded-md bg-indigo-500 text-white">
                                 <!-- Heroicon name: color-swatch -->
                                 <svg class="h-4 w-4" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
@@ -435,15 +502,15 @@
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                         d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01" />
                                 </svg>
-                            </span> <span class="text-gray-500 flex items-center jsutify-center ml-2">I revamped the
-                                website and created a lot of visuals (flyers, </span>
+                            </span> <span class="text-gray-500 flex items-center jsutify-center ml-2">And, in the mean time, I revamped the
+                                website and created a lot of visuals (flyers, programs, illustrated maps, etc).   </span>
                         </p>
                     </a></article>
             </li>
             <!-- CPAS Bxl -->
             <li>
-                <article><a href="#"
-                        class="grid md:grid-cols-8 xl:grid-cols-9 items-start relative rounded-xl p-3 sm:p-5 xl:p-6 overflow-hidden hover:bg-white">
+                <article><a
+                        class="grid md:grid-cols-8 xl:grid-cols-9 items-start relative rounded-xl p-3 sm:p-5 xl:p-6 overflow-hidden hover:bg-white show-details">
                         <h3
                             class="font-semibold text-gray-900 md:col-start-3 md:col-span-6 xl:col-start-3 xl:col-span-7 mb-1 ml-9 md:ml-0">
                             Trainer <span class="text-sm text-gray-400 font-light">@CPAS of Brussels - Belgium</span>
@@ -458,10 +525,11 @@
                             </svg>
                             <p>Feb - Dec 2015 <br><span class="text-sm text-gray-400 font-light">11 months</span></p>
                         </time>
-                        <!-- <p class="text-gray-500 md:col-start-3 md:col-span-6 xl:col-span-7 ml-9 md:ml-0 mb-1">Literacy
-    training, in
-    French,
-    for people of any age and any origin. Evaluation and cultural activities.</p> -->
+                        <p class="text-gray-500 md:col-start-3 md:col-span-6 xl:col-span-7 ml-9 md:ml-0 mb-1 details">
+                            Literacy
+                            training, in
+                            French,
+                            for people of any age and any origin. Evaluation and cultural activities.</p>
                         <p class="md:col-start-3 md:col-span-6 xl:col-span-7 ml-9 md:ml-0 flex mb-1">
                             <span class="flex items-center justify-center h-8 w-8 rounded-md bg-indigo-500 text-white">
                                 <!-- Heroicon name: academia-cap -->
@@ -490,8 +558,8 @@
             </li>
             <!--  La Base ASBL -->
             <li>
-                <article><a href="#"
-                        class="grid md:grid-cols-8 xl:grid-cols-9 items-start relative rounded-xl p-3 sm:p-5 xl:p-6 overflow-hidden hover:bg-white">
+                <article><a
+                        class="grid md:grid-cols-8 xl:grid-cols-9 items-start relative rounded-xl p-3 sm:p-5 xl:p-6 overflow-hidden hover:bg-white show-details">
                         <h3
                             class="font-semibold text-gray-900 md:col-start-3 md:col-span-6 xl:col-start-3 xl:col-span-7 mb-1 ml-9 md:ml-0">
                             Communication assistant <span class="text-sm text-gray-400 font-light">@La Base ASBL -
@@ -507,9 +575,10 @@
                             <p>Oct 2014 - Feb 2015 <br><span class="text-sm text-gray-400 font-light">4 months</span>
                             </p>
                         </time>
-                        <!-- <p class="text-gray-500 md:col-start-3 md:col-span-6 xl:col-span-7 ml-9 md:ml-0 mb-1">Creation
-        of internal and
-        external communication material. Follow-up of the redesign of the website of the ASBL.</p> -->
+                        <p class="text-gray-500 md:col-start-3 md:col-span-6 xl:col-span-7 ml-9 md:ml-0 mb-1 details">
+                            Creation
+                            of internal and
+                            external communication material. Follow-up of the redesign of the website of the ASBL.</p>
                         <p class="md:col-start-3 md:col-span-6 xl:col-span-7 ml-9 md:ml-0 flex mb-1">
                             <span class="flex items-center justify-center h-8 w-8 rounded-md bg-indigo-500 text-white">
                                 <!-- Heroicon name: color-swatch -->
@@ -518,15 +587,14 @@
                                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                         d="M7 21a4 4 0 01-4-4V5a2 2 0 012-2h4a2 2 0 012 2v12a4 4 0 01-4 4zm0 0h12a2 2 0 002-2v-4a2 2 0 00-2-2h-2.343M11 7.343l1.657-1.657a2 2 0 012.828 0l2.829 2.829a2 2 0 010 2.828l-8.486 8.485M7 17h.01" />
                                 </svg>
-                            </span> <span class="text-gray-500 flex items-center jsutify-center ml-2">The creation of
-                                internal and external communication material. </span>
+                            </span> <span class="text-gray-500 flex items-center jsutify-center ml-2">At this position I created design linked to the childhood. It goes from stickers for cars, nursery fronts as well as registration forms for extracurricular activities. I didn't see it like that yet, but it was about making simple forms for parents. My first steps in the user experience.</span>
                         </p>
                     </a></article>
             </li>
             <!-- Amnesty International -->
             <li>
-                <article><a href="#"
-                        class="grid md:grid-cols-8 xl:grid-cols-9 items-start relative rounded-xl p-3 sm:p-5 xl:p-6 overflow-hidden hover:bg-white">
+                <article><a
+                        class="grid md:grid-cols-8 xl:grid-cols-9 items-start relative rounded-xl p-3 sm:p-5 xl:p-6 overflow-hidden hover:bg-white show-details">
                         <h3
                             class="font-semibold text-gray-900 md:col-start-3 md:col-span-6 xl:col-start-3 xl:col-span-7 mb-1 ml-9 md:ml-0">
                             Youth Program Coordination Assistant <span class="text-sm text-gray-400 font-light">@Amnesty
@@ -542,10 +610,11 @@
                             <p>Aug - Sep 2014 <br><span class="text-sm text-gray-400 font-light">2 months -
                                     voluntary</span></p>
                         </time>
-                        <!-- <p class="text-gray-500 md:col-start-3 md:col-span-6 xl:col-span-7 ml-9 md:ml-0 mb-1">Creation
-            of educational
-            tools
-            about human rights. Training for AI facilitators. Animation in schools.</p> -->
+                        <p class="text-gray-500 md:col-start-3 md:col-span-6 xl:col-span-7 ml-9 md:ml-0 mb-1 details">
+                            Creation
+                            of educational
+                            tools
+                            about human rights. Training for AI facilitators. Animation in schools.</p>
                         <p class="md:col-start-3 md:col-span-6 xl:col-span-7 ml-9 md:ml-0 flex">
                             <span class="flex items-center justify-center h-8 w-8 rounded-md bg-indigo-500 text-white">
                                 <!-- Heroicon name: academia-cap -->
@@ -563,8 +632,8 @@
             </li>
             <!-- A7A Egypt -->
             <li>
-                <article><a href="#"
-                        class="grid md:grid-cols-8 xl:grid-cols-9 items-start relative rounded-xl p-3 sm:p-5 xl:p-6 overflow-hidden hover:bg-white">
+                <article><a
+                        class="grid md:grid-cols-8 xl:grid-cols-9 items-start relative rounded-xl p-3 sm:p-5 xl:p-6 overflow-hidden hover:bg-white show-details">
                         <h3
                             class="font-semibold text-gray-900 md:col-start-3 md:col-span-6 xl:col-start-3 xl:col-span-7 mb-1 ml-9 md:ml-0">
                             Primary school teacher <span class="text-sm text-gray-400 font-light">@Alexandria
@@ -580,10 +649,11 @@
                             <p>Oct 2013 - May 2014 <br><span class="text-sm text-gray-400 font-light">7 months</span>
                             </p>
                         </time>
-                        <!-- <p class="text-gray-500 md:col-start-3 md:col-span-6 xl:col-span-7 ml-9 md:ml-0 mb-1">Class of
-            CM1 -
-            International
-            Baccalaureate.</p> -->
+                        <p class="text-gray-500 md:col-start-3 md:col-span-6 xl:col-span-7 ml-9 md:ml-0 mb-1 details">
+                            Class of
+                            CM1 -
+                            International
+                            Baccalaureate.</p>
                         <p class="md:col-start-3 md:col-span-6 xl:col-span-7 ml-9 md:ml-0 flex">
                             <span class="flex items-center justify-center h-8 w-8 rounded-md bg-indigo-500 text-white">
                                 <!-- Heroicon name: globe -->
@@ -600,8 +670,8 @@
             </li>
             <!-- TMK first -->
             <li>
-                <article><a href="#"
-                        class="grid md:grid-cols-8 xl:grid-cols-9 items-start relative rounded-xl p-3 sm:p-5 xl:p-6 overflow-hidden hover:bg-white">
+                <article><a
+                        class="grid md:grid-cols-8 xl:grid-cols-9 items-start relative rounded-xl p-3 sm:p-5 xl:p-6 overflow-hidden hover:bg-white show-details">
                         <h3
                             class="font-semibold text-gray-900 md:col-start-3 md:col-span-6 xl:col-start-3 xl:col-span-7 mb-1 ml-9 md:ml-0">
                             IT Manager <span class="text-sm text-gray-400 font-light">@TMK - RDCongo</span></h3><time
@@ -616,11 +686,11 @@
                             <p>Dec 2012 - May 2013 <br><span class="text-sm text-gray-400 font-light">6 months</span>
                             </p>
                         </time>
-                        <!-- <p class="text-gray-500 md:col-start-3 md:col-span-6 xl:col-span-7 ml-9 md:ml-0 mb-1">
-        Implementation of a
-        fleet and
-        inventory management program. Trainings in the use of computer tools as well as in office
-        automation. Evaluation and upgrade of the IT fleet.</p> -->
+                        <p class="text-gray-500 md:col-start-3 md:col-span-6 xl:col-span-7 ml-9 md:ml-0 mb-1 details">
+                            Implementation of a
+                            fleet and
+                            inventory management program. Trainings in the use of computer tools as well as in office
+                            automation. Evaluation and upgrade of the IT fleet.</p>
                         <p class="md:col-start-3 md:col-span-6 xl:col-span-7 ml-9 md:ml-0 flex">
                             <span class="flex items-center justify-center h-8 w-8 rounded-md bg-indigo-500 text-white">
                                 <!-- Heroicon name: globe -->
@@ -636,8 +706,8 @@
             </li>
             <!-- EALE Trainee -->
             <li>
-                <article><a href="#"
-                        class="grid md:grid-cols-8 xl:grid-cols-9 items-start relative rounded-xl p-3 sm:p-5 xl:p-6 overflow-hidden hover:bg-white">
+                <article><a
+                        class="grid md:grid-cols-8 xl:grid-cols-9 items-start relative rounded-xl p-3 sm:p-5 xl:p-6 overflow-hidden hover:bg-white show-details">
                         <h3
                             class="font-semibold text-gray-900 md:col-start-3 md:col-span-6 xl:col-start-3 xl:col-span-7 mb-1 ml-9 md:ml-0">
                             Collaborator in project management <span class="text-sm text-gray-400 font-light">@En Avant
@@ -654,12 +724,13 @@
                             <p>Aug - Sep 2014 <br><span class="text-sm text-gray-400 font-light">2 months -
                                     voluntary</span></p>
                         </time>
-                        <!-- <p class="text-gray-500 md:col-start-3 md:col-span-6 xl:col-span-7 ml-9 md:ml-0 mb-1">Support to
-            the project
-            office, work, communication department, pedagogical advices. Organization, setting up and
-            active participation in meetings with the various team leaders and association managers,
-            fields trips, etc. Writing of requests for funds, writing of narrative and financial reports
-            of projects.</p> -->
+                        <p class="text-gray-500 md:col-start-3 md:col-span-6 xl:col-span-7 ml-9 md:ml-0 mb-1 details">
+                            Support to
+                            the project
+                            office, work, communication department, pedagogical advices. Organization, setting up and
+                            active participation in meetings with the various team leaders and association managers,
+                            fields trips, etc. Writing of requests for funds, writing of narrative and financial reports
+                            of projects.</p>
                         <p class="md:col-start-3 md:col-span-6 xl:col-span-7 ml-9 md:ml-0 flex mb-1">
                             <span class="flex items-center justify-center h-8 w-8 rounded-md bg-indigo-500 text-white">
                                 <!-- Heroicon name: color-swatch -->
@@ -699,7 +770,7 @@
             <div
                 class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-16 lg:px-8 lg:flex lg:items-center lg:justify-between">
                 <h2 class="text-3xl font-extrabold tracking-tight text-gray-900 sm:text-4xl">
-                    <span class="block">Print this page, it's a bit different.</span>
+                    <span class="block">Print this, on one page...</span>
                     <span class="block text-indigo-600">Or, discover an amazing product.</span>
                 </h2>
                 <div class="mt-8 lex lg:mt-0 lg:flex-shrink-0">
@@ -720,6 +791,18 @@
         </div>
     </section>
     <script>
+
+        const buttons = document.querySelectorAll('.show-details');
+
+        function showDetails(event) {
+            const buttonClicked = event.currentTarget;
+            const brolToShow = buttonClicked.querySelectorAll('.details');
+            for (i = 0; i < brolToShow.length; i++) {
+                brolToShow[i].classList.toggle('show');
+            }
+        }
+
+        buttons.forEach(buttons => buttons.addEventListener('click', showDetails));// select all the buttons!
 
     </script>
 </body>

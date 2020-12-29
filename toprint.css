@@ -2,10 +2,27 @@
         display: none;
     }
 @media print {
+    @page {size: landscape
+    }
+    
     .noprint{
         display: none;
     }
     .onlyprint{
         display: block;
     }
+    .max-w-2xl{
+        max-width: 100%;
+    }
+    .leading-6 {
+        line-height: 1.0rem;
+    }
+    .text-lg {
+        font-size: 0.9rem;
+    }
+    .text-base {
+        font-size: 0.7rem;
+        line-height: 1rem;
+    }
+    .mt-2{margin-top: 0.1rem;}
  }
